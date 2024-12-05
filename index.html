@@ -1,55 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Dashboard</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="dashboard">
-    <aside class="sidebar">
-      <h2>Dashboard</h2>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Profile</li>
-          <li>Messages</li>
-          <li>History</li>
-          <li>Task</li>
-          <li>Communities</li>
-          <li>Settings</li>
-          <li>Support</li>
-          <li>Privacy</li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <nav>
+      <div class="sidebar">
+        <div class="dashboard">
+          <img src="assets/view-dashboard-outline.svg" alt="" /> Dashboard
+        </div>
+        <ul class="first">
+          <li><img src="assets/home.svg" alt="" /> Home</li>
+          <li><img src="assets/account-circle.svg" alt="" /> Profile</li>
+          <li><img src="assets/message-reply.svg" alt="" /> Messages</li>
+          <li><img src="assets/clock-time-three.svg" alt="" /> History</li>
+          <li><img src="assets/note-multiple.svg" alt="" /> Tasks</li>
+          <li><img src="assets/account-group.svg" alt="" /> Communities</li>
         </ul>
-      </nav>
-    </aside>
-    <main class="main-content">
-      <header>
-        <div class="search-bar">
-          <input type="text" placeholder="Search">
+        <ul class="second">
+          <li><img src="assets/cog.svg" alt="" /> Settings</li>
+          <li><img src="assets/help-box.svg" alt="" /> Support</li>
+          <li><img src="assets/shield-check.svg" alt="" /> Privacy</li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <div class="search">
+        <button class="search"><img src="assets/magnify.svg" alt="" /></button
+        ><input type="search" name="" id="" class="searchbar" />
+      </div>
+      <button class="bell">
+        <img src="assets/bell-ring.svg" alt="" /></button
+      ><button class="profile">
+        <img src="assets/profile-small.svg" alt="" />
+      </button>
+      <div class="user-name">Morgan Oakley</div>
+      <div class="greeting">
+        <img src="assets/profile-big.svg" alt="" />
+        <div class="text">
+          Hi there,<br />
+          Morgan Oakley (@morgan)
         </div>
-        <div class="profile">
-          <img src="profile-pic.jpg" alt="Jane Doe">
-          <span>Jane Doe (@jane)</span>
-        </div>
-      </header>
-      <section class="projects">
-        <h3>Your Projects</h3>
-        <div class="project-grid">
-          <div class="project-card">Super Cool Project</div>
-          <div class="project-card">Less Cool Project</div>
-          <div class="project-card">Impossible App</div>
-          <div class="project-card">Easy Peasy App</div>
-          <div class="project-card">Ad Blocker</div>
-          <div class="project-card">Money Maker</div>
-        </div>
-      </section>
-      <section class="announcement">
-        <h3>Announcements</h3>
-        <p>Site Maintenance: Lorem ipsum...</p>
-      </section>
+      </div>
+      <button class="new">new</button><button class="upload">upload</button
+      ><button class="share">share</button>
+    </header>
+    <main>
+      <div class="project-container">
+        <div class="head">Your Projects</div>
+        <article>
+          <div class="project">
+            <div>
+              Super Duper Cool Project <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, hic
+              consequatur tenetur vero maxime neque non harum repellendus iusto
+              quos veritatis dolore iure ab ex ea exercitationem minima commodi
+              officiis?
+            </div>
+            <div>
+              <button class="project-icons">
+                <img src="assets/bookmark-outline.svg" alt="" /></button
+              ><button class="project-icons">
+                <img src="assets/eye-plus-outline.svg" alt="" /></button
+              ><button class="project-icons">
+                <img src="assets/share-variant-outline.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="project">
+            <div>
+              Cool Project <br />
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+              dolore natus hic illo, officia minus deleniti voluptas fugit
+              quisquam saepe quos recusandae itaque qui eum! Est, magni
+              distinctio? Fuga, iusto.
+            </div>
+            <div>
+              <button class="project-icons">
+                <img src="assets/bookmark-outline.svg" alt="" /></button
+              ><button class="project-icons">
+                <img src="assets/eye-plus-outline.svg" alt="" /></button
+              ><button class="project-icons">
+                <img src="assets/share-variant-outline.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="project">
+            <div>
+              Super Cool Project <br />
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
+              ipsa, hic porro aspernatur accusamus dolorum delectus illo amet
+              enim animi expedita eos totam vero quidem magnam voluptate
+              voluptatem velit possimus quasi. Ipsam, facilis!
+            </div>
+            <div>
+              <button class="project-icons">
+                <img src="assets/bookmark-outline.svg" alt="" /></button
+              ><button class="project-icons">
+                <img src="assets/eye-plus-outline.svg" alt="" /></button
+              ><button class="project-icons">
+                <img src="assets/share-variant-outline.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="project">
+            <div>
+              Impossible App <br />
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum,
+              voluptatum exercitationem eius voluptatem quasi dolor rem velit
+              ad? Porro doloribus ipsam blanditiis neque saepe sed commodi
+              consequatur repudiandae. Quae, repellendus!
+            </div>
+            <div>
+              <button class="project-icons">
+                <img src="assets/bookmark-outline.svg" alt="" /></button
+              ><button class="project-icons">
+                <img src="assets/eye-plus-outline.svg" alt="" /></button
+              ><button class="project-icons">
+                <img src="assets/share-variant-outline.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="project">
+            <div>
+              Interesting Project <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo autem
+              omnis ratione necessitatibus, accusamus consequatur odio cum
+              voluptatum nisi dolore similique consequuntur. Et, optio officia!
+            </div>
+            <div>
+              <button class="project-icons">
+                <img src="assets/bookmark-outline.svg" alt="" /></button
+              ><button class="project-icons">
+                <img src="assets/eye-plus-outline.svg" alt="" /></button
+              ><button class="project-icons">
+                <img src="assets/share-variant-outline.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="project">
+            <div>
+              Impossible Project <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              molestias dolorem ut voluptas hic explicabo reprehenderit nobis
+              necessitatibus! In, nobis!
+            </div>
+            <div>
+              <button class="project-icons">
+                <img src="assets/bookmark-outline.svg" alt="" /></button
+              ><button class="project-icons">
+                <img src="assets/eye-plus-outline.svg" alt="" /></button
+              ><button class="project-icons">
+                <img src="assets/share-variant-outline.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="announcement">
+        <div class="head">Announcement</div>
+        <article>
+          <div class="1">
+            Site Maintenance <br />
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
+            necessitatibus nihil aut nostrum nesciunt nemo?
+          </div>
+          <div class="2">
+            Community Share Day <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem itaque
+            magni ut cumque adipisci ipsam.
+          </div>
+          <div class="3">
+            Update Privacy Policy <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero
+            explicabo illo accusantium voluptate nihil.
+          </div>
+        </article>
+      </div>
+      <div class="trending">
+        <div class="head">Trending</div>
+        <article>
+          <div class="trending-user">
+            <img src="assets/profile-small.svg" alt="" />@Sameer <br />
+            some nice text
+          </div>
+          <div class="trending-user">
+            <img src="assets/profile-small.svg" alt="" />@tegan <br />
+            some nice text
+          </div>
+          <div class="trending-user">
+            <img src="assets/profile-small.svg" alt="" />@kendall <br />
+            some nice text
+          </div>
+          <div class="trending-user">
+            <img src="assets/profile-small.svg" alt="" />@alex <br />
+            some nice text
+          </div>
+        </article>
+      </div>
     </main>
-  </div>
-</body>
+  </body>
 </html>
