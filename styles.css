@@ -20,13 +20,9 @@ body {
   z-index: 10;
 }
 
-/* styles.css */
 .hidden {
-  display: none; /* Completely hides the element */
+  display: none;
 }
-
-/* Rest of the styles remain the same */
-
 
 .sidebar {
   width: 250px;
